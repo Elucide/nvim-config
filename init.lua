@@ -3,6 +3,7 @@ require("toggleterm").setup{}
 require('treesitter')
 local vimrc = vim.fn.stdpath("config") .. "/vimrc.vim"
 vim.cmd.source(vimrc)
+vim.loader.enable()
 
 
 
@@ -27,6 +28,7 @@ vim.cmd [[let g:airline_theme='base16']]
 --
 
 vim.cmd[[let g:airline#extensions#tabline#enabled = 1]]
+vim.cmd[[let g:airline_powerline_fonts = 1]]
 
 
 --
@@ -46,3 +48,12 @@ vim.cmd[["hi clear CursorLine]]
 vim.cmd[[nnoremap <leader>t :Telescope<cr>]]
 vim.cmd[[nnoremap <leader>f :Telescope find_files<cr>]]
 vim.cmd[[nnoremap <leader>b :Telescope buffers<cr>]]
+vim.cmd[[nnoremap <leader>g :Telescope live_grep<cr>]]
+
+
+--
+--				CELLULAR AUTOMATION
+--
+
+vim.keymap.set("n", "<leader>[", "<cmd>CellularAutomaton make_it_rain<CR>")
+vim.keymap.set("n", "<leader>]", "<cmd>CellularAutomaton game_of_life<CR>")
