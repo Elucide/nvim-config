@@ -62,7 +62,7 @@ return packer.startup(function(use)
 	use "rebelot/kanagawa.nvim"
 	use 'nvim-tree/nvim-web-devicons'
 
-	use("nathom/filetype.nvim")
+--	use("nathom/filetype.nvim")
 	use{"HampusHauffman/block.nvim", config = function()
 		require("block").setup()
 	end}
