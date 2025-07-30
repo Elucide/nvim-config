@@ -6,8 +6,14 @@ vim.cmd.source(vimrc)
 vim.loader.enable()
 
 
+--
+--				MY STUFF
+--
+--
 
-
+vim.keymap.set("n", "<leader>e", "<cmd>Ex<cr>")
+--vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
+vim.cmd [[set guicursor=t:ver25]]
 
 
 --
@@ -57,3 +63,9 @@ vim.cmd[[nnoremap <leader>g :Telescope live_grep<cr>]]
 
 vim.keymap.set("n", "<leader>[", "<cmd>CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n", "<leader>]", "<cmd>CellularAutomaton game_of_life<CR>")
+
+---
+---				ToggleTerm
+---
+
+vim.cmd[[nnoremap <leader><cr> :ToggleTerm direction=float<cr>]]

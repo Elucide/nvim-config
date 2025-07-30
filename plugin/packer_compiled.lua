@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/yosephschecroun/.cache/nvim/packer_hererocks/2.1.1744318430/share/lua/5.1/?.lua;/Users/yosephschecroun/.cache/nvim/packer_hererocks/2.1.1744318430/share/lua/5.1/?/init.lua;/Users/yosephschecroun/.cache/nvim/packer_hererocks/2.1.1744318430/lib/luarocks/rocks-5.1/?.lua;/Users/yosephschecroun/.cache/nvim/packer_hererocks/2.1.1744318430/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/yosephschecroun/.cache/nvim/packer_hererocks/2.1.1744318430/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -77,101 +77,101 @@ _G.packer_plugins = {
   ["SmoothCursor.nvim"] = {
     config = { "\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17smoothcursor\frequire\0" },
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/SmoothCursor.nvim",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/SmoothCursor.nvim",
     url = "https://github.com/gen740/SmoothCursor.nvim"
   },
   ale = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/ale",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/ale",
     url = "https://github.com/dense-analysis/ale"
   },
   ["block.nvim"] = {
     config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nblock\frequire\0" },
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/block.nvim",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/block.nvim",
     url = "https://github.com/HampusHauffman/block.nvim"
   },
   ["cellular-automaton.nvim"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/cellular-automaton.nvim",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
     url = "https://github.com/eandrju/cellular-automaton.nvim"
   },
   everforest = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/everforest",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
   },
   ["kanagawa.nvim"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/kanagawa.nvim",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["numbers.vim"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/numbers.vim",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/numbers.vim",
     url = "https://github.com/myusuf3/numbers.vim"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
     config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0" },
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/toggleterm.nvim",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["vim-airline"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/vim-airline",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
   ["vim-airline-colornum"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/vim-airline-colornum",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/vim-airline-colornum",
     url = "https://github.com/ntpeters/vim-airline-colornum"
   },
   ["vim-airline-themes"] = {
     loaded = true,
-    path = "/mnt/nfs/homes/yschecro/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/vim-airline-themes",
+    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
--- Config for: block.nvim
-time([[Config for block.nvim]], true)
-try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nblock\frequire\0", "config", "block.nvim")
-time([[Config for block.nvim]], false)
 -- Config for: SmoothCursor.nvim
 time([[Config for SmoothCursor.nvim]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17smoothcursor\frequire\0", "config", "SmoothCursor.nvim")
 time([[Config for SmoothCursor.nvim]], false)
+-- Config for: block.nvim
+time([[Config for block.nvim]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nblock\frequire\0", "config", "block.nvim")
+time([[Config for block.nvim]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
