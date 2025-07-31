@@ -14,6 +14,7 @@ vim.loader.enable()
 vim.keymap.set("n", "<leader>e", "<cmd>Ex<cr>")
 --vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
 vim.cmd [[set guicursor=t:ver25]]
+vim.cmd [[set guicursor=i:ver25]]
 
 
 --
@@ -69,3 +70,16 @@ vim.keymap.set("n", "<leader>]", "<cmd>CellularAutomaton game_of_life<CR>")
 ---
 
 vim.cmd[[nnoremap <leader><cr> :ToggleTerm direction=float<cr>]]
+
+local Terminal  = require('toggleterm.terminal').Terminal
+local lazygit = Terminal:new({ cmd = "lazygit", direction="float"})
+
+function _lazygit_toggle()
+  lazygit:toggle()
+end
+
+vim.api.nvim_set_keymap("n", "<leader>l", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
+
+require'toggleterm'.setup {
+	shade_terminals = true
+}
