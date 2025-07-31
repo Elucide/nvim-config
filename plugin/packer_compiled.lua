@@ -74,22 +74,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["SmoothCursor.nvim"] = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17smoothcursor\frequire\0" },
-    loaded = true,
-    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/SmoothCursor.nvim",
-    url = "https://github.com/gen740/SmoothCursor.nvim"
-  },
   ale = {
     loaded = true,
     path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/ale",
     url = "https://github.com/dense-analysis/ale"
-  },
-  ["block.nvim"] = {
-    config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nblock\frequire\0" },
-    loaded = true,
-    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/block.nvim",
-    url = "https://github.com/HampusHauffman/block.nvim"
   },
   ["cellular-automaton.nvim"] = {
     loaded = true,
@@ -105,11 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
-  },
-  ["numbers.vim"] = {
-    loaded = true,
-    path = "/Users/yosephschecroun/.local/share/nvim/site/pack/packer/start/numbers.vim",
-    url = "https://github.com/myusuf3/numbers.vim"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -160,14 +143,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: SmoothCursor.nvim
-time([[Config for SmoothCursor.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17smoothcursor\frequire\0", "config", "SmoothCursor.nvim")
-time([[Config for SmoothCursor.nvim]], false)
--- Config for: block.nvim
-time([[Config for block.nvim]], true)
-try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nblock\frequire\0", "config", "block.nvim")
-time([[Config for block.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")

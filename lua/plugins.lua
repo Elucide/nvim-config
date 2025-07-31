@@ -46,33 +46,25 @@ return packer.startup(function(use)
 	use ("vim-airline/vim-airline-themes")
 	use ("dense-analysis/ale")
 	use ("ntpeters/vim-airline-colornum")
-	use {
+	use
+	{
 		'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	use ("myusuf3/numbers.vim")
-	use {
+---	use ("myusuf3/numbers.vim")
+	use
+	{
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
 	}
-	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+	use
+	{"akinsho/toggleterm.nvim", tag = '*', config = function()
 		require("toggleterm").setup()
 	end}
 	use "rebelot/kanagawa.nvim"
 	use 'nvim-tree/nvim-web-devicons'
-
---	use("nathom/filetype.nvim")
-	use{"HampusHauffman/block.nvim", config = function()
-		require("block").setup()
-	end}
-
-	use { 'gen740/SmoothCursor.nvim',
-  config = function()
-    require('smoothcursor').setup()
-  end
-}
-use 'eandrju/cellular-automaton.nvim' 
+	use 'eandrju/cellular-automaton.nvim' 
 
 
 	if PACKER_BOOTSTRAP then
